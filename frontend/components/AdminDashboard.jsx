@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from "../axiosConfig";
+
 
 const AdminDashboard = () => {
   const [plans, setPlans] = useState([]);
