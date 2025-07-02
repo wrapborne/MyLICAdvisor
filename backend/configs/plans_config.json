@@ -1,0 +1,44 @@
+[
+  {
+    "plan_id": "jeevan_labh",
+    "plan_name": "LIC Jeevan Labh",
+    "min_age": 8,
+    "max_age": 59,
+    "min_term": 16,
+    "max_term": 25,
+    "min_premium": 3000,
+    "min_maturity_goal": 100000,
+    "available_payout_options": ["lump_sum", "settlement"],
+    "available_payment_modes": ["limited", "full"],
+    "available_payment_frequencies": ["yearly", "half-yearly", "quarterly", "monthly"],
+    "riders_supported": ["adb", "ci"]
+  },
+  {
+    "plan_id": "jeevan_umang",
+    "plan_name": "LIC Jeevan Umang",
+    "min_age": 90,
+    "max_age": 55,
+    "min_term": 15,
+    "max_term": 30,
+    "min_premium": 7000,
+    "min_maturity_goal": 150000,
+    "available_payout_options": ["lifetime"],
+    "available_payment_modes": ["limited", "full", "single"],
+    "available_payment_frequencies": ["yearly", "half-yearly", "quarterly", "monthly"],
+    "riders_supported": ["adb"]
+  },
+  {
+    "plan_id": "micro_bachat",
+    "plan_name": "LIC Micro Bachat",
+    "min_age": 18,
+    "max_age": 55,
+    "min_term": 9,
+    "max_term": 15,
+    "min_premium": 466,
+    "min_maturity_goal": 100000,
+    "available_payout_options": ["lump_sum"],
+    "available_payment_modes": ["full"],
+    "available_payment_frequencies": ["monthly"],
+    "riders_supported": []
+  }
+]

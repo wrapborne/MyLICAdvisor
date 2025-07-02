@@ -1,0 +1,102 @@
+[
+  {
+    "key": "age",
+    "label": "Your Age",
+    "type": "integer",
+    "required": true,
+    "min": 18,
+    "max": 65
+  },
+  {
+    "key": "children_age",
+    "label": "Child's Age",
+    "type": "integer",
+    "required": false,
+    "min": 0,
+    "max": 25,
+    "conditional_on": {
+      "field": "goal",
+      "values": ["child_education", "child_marriage"]
+    }
+  },
+  {
+    "key": "premium_budget",
+    "label": "Premium Budget (Annual or Monthly)",
+    "type": "float",
+    "required": true,
+    "min": null  // runtime-validated against plans
+  },
+  {
+    "key": "maturity_goal_amount",
+    "label": "Desired Maturity Corpus",
+    "type": "float",
+    "required": true,
+    "min": null  // runtime-validated against plans
+  },
+  {
+    "key": "maturity_payout_preference",
+    "label": "Maturity Payout Preference",
+    "type": "multi-select",
+    "required": true,
+    "choices": [
+      {"id": "lump_sum", "name": "Lump Sum"},
+      {"id": "settlement", "name": "Settlement (Fixed Period Income)"},
+      {"id": "lifetime", "name": "Lifetime Income"}
+    ]
+  },
+  {
+    "key": "payment_mode",
+    "label": "Payment Mode",
+    "type": "enum",
+    "required": true,
+    "choices": [
+      "limited",
+      "full",
+      "single"
+    ]
+  },
+  {
+    "key": "payment_frequency",
+    "label": "Payment Frequency",
+    "type": "enum",
+    "required": true,
+    "choices": [
+      "yearly",
+      "half-yearly",
+      "quarterly",
+      "monthly"
+    ]
+  },
+  {
+    "key": "gender",
+    "label": "Gender",
+    "type": "enum",
+    "required": true,
+    "choices": [
+      "male",
+      "female",
+      "other"
+    ]
+  },
+  {
+    "key": "smoking_status",
+    "label": "Smoking Status",
+    "type": "enum",
+    "required": true,
+    "choices": [
+      "smoker",
+      "non-smoker"
+    ]
+  },
+  {
+    "key": "optional_riders",
+    "label": "Optional Riders",
+    "type": "multi-select",
+    "required": false,
+    "choices": [
+      {"id": "adb", "name": "Accidental Death Benefit"},
+      {"id": "ci", "name": "Critical Illness Rider"},
+      {"id": "db", "name": "Disability Benefit"}
+    ]
+  }
+]
